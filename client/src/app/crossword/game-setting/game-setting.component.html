@@ -1,0 +1,38 @@
+<p class = "title">Configure Your Game!</p>
+
+<div class = "row">
+  <div class = "col-md-6">
+    <p class = "secondaryTitle">Select The Type Of Game</p>
+    <div class="btn-group btn-group-toggle" ngbRadioGroup name="type" [(ngModel)]="typeOfGame">
+      <label ngbButtonLabel class="btn-primary btn-lg">
+        <input ngbButton type="radio" value="solo" (click) = "soloSelected()"> Solo
+      </label>
+      <label ngbButtonLabel class="btn-primary btn-lg">
+        <input ngbButton type="radio" value="multiplayer" (click) = "multiPlayerSelected()"> Multiplayer
+      </label>
+    </div>
+  </div>
+
+  <div class = "col-md-6">
+    <p class = "secondaryTitle">Select Difficulty</p>
+    <div class="btn-group btn-group-toggle" ngbRadioGroup name="diff" [(ngModel)]="difficulty">
+      <label ngbButtonLabel class="btn-primary btn-lg">
+        <input ngbButton type="radio" value="easy" [disabled]= "isDifficultyDisabled" > Easy
+      </label>
+      <label ngbButtonLabel class="btn-primary btn-lg">
+        <input ngbButton type="radio" value="normal" [disabled]= "isDifficultyDisabled"> Normal
+      </label>
+      <label ngbButtonLabel class="btn-primary btn-lg">
+        <input ngbButton type="radio" value="hard" [disabled]= "isDifficultyDisabled"> Hard
+      </label>
+    </div>
+  </div>
+</div>
+<hr>
+<div class = "startButtun" *ngIf="difficulty !== 'multiplayer-lobby'">
+  <a href = "/crossword/{{typeOfGame}}/{{difficulty}}" type = "button" class= "btn btn-success btn-lg">Start Playing!</a>
+</div>
+
+<div class = "startButtun" *ngIf="difficulty === 'multiplayer-lobby'">
+  <a href = "/crossword/multiplayer-lobby" type = "button" class= "btn btn-success btn-lg">Join Lobby</a>
+</div>

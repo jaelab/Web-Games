@@ -1,0 +1,9 @@
+<input
+  [appFocus]="_inputFocused" 
+  [ngClass] = "{whiteCell: colorToHighlight == 'white', blackCell: cell._isBlack, highlightedCell: colorToHighlight == 'blue', foundCell: isCorrectAnswer, wrongAnswerCell: colorToHighlight == 'red'}" 
+  [disabled] = "cell._isBlack || isCorrectAnswer"
+  (click) = "inputClicked($event)"
+  (keydown) = "letterEntered($event)"
+  [(ngModel)] = "value"
+  maxlength = "1"
+/>

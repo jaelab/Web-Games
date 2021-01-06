@@ -1,0 +1,38 @@
+import { Container } from "inversify";
+import Types from "./types";
+import { Server } from "./server";
+import { Application } from "./app";
+import { GridMakerService } from "./webServices/crosswordServices/gridServices/gridMakerService/grid-maker.service";
+import { LexicalRoute } from "./webServices/crosswordServices/lexicalServices/lexicalRoute";
+import { LexicalService } from "./webServices/crosswordServices/lexicalServices/lexical.service";
+import { LexicalMessenger } from "./webServices/crosswordServices/lexicalServices/lexicalMessenger";
+import { GridLexicalSerivce } from "./webServices/crosswordServices/gridServices/gridLexicalService/grid-lexical.service";
+import { WordDB } from "./webServices/crosswordServices/gridServices/gridLexicalService/wordDB";
+import { GridFillerService } from "./webServices/crosswordServices/gridServices/gridFillerService/grid-filler.service";
+import { GridCreatorService } from "./webServices/crosswordServices/gridServices/gridCreatorService/grid-creator.service";
+import { GridCreatorRoute } from "./webServices/crosswordServices/gridServices/gridCreatorService/gridCreatorRoute";
+import { GridCreatorMessenger } from "./webServices/crosswordServices/gridServices/gridCreatorService/gridCreatorMessenger";
+import { AdminMessenger } from "./webServices/admin/adminMessenger";
+import { AdminRoute } from "./webServices/admin/adminRoute";
+// tslint:disable-next-line:max-line-length
+import { GridFillerManipulatorService } from "./webServices/crosswordServices/gridServices/gridFillerService/grid-filler-manipulator.service";
+import { LobbyService } from "./webServices/crosswordServices/lobbyService/lobby.service";
+const container: Container = new Container();
+
+container.bind(Types.Server).to(Server);
+container.bind(Types.Application).to(Application);
+container.bind(Types.GridMakerService).to(GridMakerService);
+container.bind(Types.AdminMessenger).to(AdminMessenger);
+container.bind(Types.AdminRoute).to(AdminRoute);
+container.bind(Types.LexicalRoute).to(LexicalRoute);
+container.bind(Types.LexicalService).to(LexicalService);
+container.bind(Types.LexicalMessenger).to(LexicalMessenger);
+container.bind(Types.GridLexicalService).to(GridLexicalSerivce);
+container.bind(Types.WordDB).to(WordDB);
+container.bind(Types.GridFillerService).to(GridFillerService);
+container.bind(Types.GridCreatorService).to(GridCreatorService);
+container.bind(Types.GridCreatorRoute).to(GridCreatorRoute);
+container.bind(Types.GridCreatorMessenger).to(GridCreatorMessenger);
+container.bind(Types.GridFillerManipulatorService).to(GridFillerManipulatorService);
+container.bind(Types.LobbyService).to(LobbyService);
+export { container };

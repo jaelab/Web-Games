@@ -1,0 +1,26 @@
+<div #container>
+    <ul class = "carParams">
+        <li>Speed: {{this.renderService.car.speed.length() * 3.6 | number :'2.2-2'}} km/h</li>
+        <li>Gear: {{this.renderService.car.currentGear + 1}}</li>
+        <li>RPM: {{this.renderService.car.rpm | number:'2.0-0'}}</li>
+    </ul>
+
+    <ul class = "HUD">
+        <li>LAP: {{this.playerService.players[0].completedLap}}/3</li>
+        <li>TIME: 
+            {{this.playerService.players[0].totalTime.minutesDisplay}} : 
+            {{this.playerService.players[0].totalTime.secondsDisplay}} :
+            {{this.playerService.players[0].totalTime.millisecondsDisplay}}
+        </li>
+        <li>LAP TIME: 
+            {{this.playerService.players[0].lapTime.minutesDisplay}} : 
+            {{this.playerService.players[0].lapTime.secondsDisplay}} :
+            {{this.playerService.players[0].lapTime.millisecondsDisplay}}
+        </li>
+    </ul>
+
+    <div class = "raceResults" *ngIf="this.playerService.players[0].completedLap === 4">
+        <app-race-results [trackName] = "_trackName"></app-race-results>
+    </div>
+
+</div>

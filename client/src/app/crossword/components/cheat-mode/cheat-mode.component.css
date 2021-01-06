@@ -1,0 +1,11 @@
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.cheatModeButton > div{
+  position: relative;
+  display: block;
+  margin: 10px;
+}

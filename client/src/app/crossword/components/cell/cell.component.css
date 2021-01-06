@@ -1,0 +1,65 @@
+.whiteCell{
+	padding: 3px;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border-width: 1px;
+	border-color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.highlightedCell{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border-width: 3px;
+	border-color: rgb(39, 85, 170);
+	background-color: rgb(142, 211, 243);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.wrongAnswerCell{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border-width: 3px;
+	border-color: rgb(114, 3, 3);
+	background-color: rgb(255, 102, 102);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.blackCell{
+	padding: 3px;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border-width: 1px;
+	border-color: #666666;
+	background-color: black;
+}
+
+.foundCell{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border-width: 3px;
+	border-color: rgba(24, 241, 5, 0.692);
+	background-color: rgb(221, 255, 153);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+	vertical-align: middle;
+}

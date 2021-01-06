@@ -1,0 +1,55 @@
+  
+  .trackList {
+    margin: 100px;
+    margin-left: 100px;
+    float: left;
+  }
+
+  h1 {
+    font: 400 40px Helvetica, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+    
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    font: 200 30px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid #ccc;
+  }
+
+  li:last-child {
+    border: none;
+  }
+
+  .selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+  
+  .track {
+    text-decoration: none;
+    color: #000;
+  
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+    display: block;
+  }
+  
+  .track:hover {
+    font-size: 50px;
+    background: #f6f6f6;
+  }
+
+  .trackDetail {
+    margin-top: 50px;
+    float: left;
+    width: 50%;
+  } 

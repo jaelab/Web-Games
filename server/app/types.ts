@@ -1,0 +1,18 @@
+export default  {
+  Server: Symbol("Server"),
+  Application: Symbol("Application"),
+  GridMakerService: Symbol("GridMakerService"),
+  LexicalRoute: Symbol("LexicalRoute"),
+  LexicalService: Symbol("LexicalService"),
+  LexicalMessenger: Symbol("LexicalMessenger"),
+  GridLexicalService: Symbol("GridLexicalService"),
+  GridFillerService: Symbol("GridFillerService"),
+  GridCreatorService: Symbol("GridCreatorService"),
+  GridCreatorMessenger: Symbol("GridCreatorMessenger"),
+  GridCreatorRoute: Symbol("GridCreatorRoute"),
+  WordDB: Symbol("WordDB"),
+  AdminMessenger: Symbol("AdminMessenger"),
+  AdminRoute: Symbol("AdminRoute"),
+  GridFillerManipulatorService: Symbol("GridFillerManipulatorService"),
+  LobbyService: Symbol("LobbyService"),
+};

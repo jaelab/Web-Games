@@ -1,0 +1,19 @@
+// tslint:disable:typedef
+export const COLOR = 0xFFFFFF;
+export const COLOR_NIGHT = 0xF25E5E;
+export const INTENSITY_DAY = 1.3;
+export const INTENSITY_NIGHT = 0.75;
+export const DIRECTIONAL_X = 0;
+export const DIRECTIONAL_Y = 10000;
+export const DIRECTIONAL_Z = 0;
+export const SPOTLIGHT_LEFT_X = -0.5;
+export const SPOTLIGHT_RIGHT_X = 0.5;
+export const SPOTLIGHT_Y = 1.5;
+export const SPOTLIGHT_Z = -4.6;
+export const SPOTLIGHT_TARGET_X = 0;
+export const SPOTLIGHT_TARGET_Y = 0;
+export const SPOTLIGHT_TARGET_Z = -5.1;
+export const SPOTLIGHT_INTENSITY = 1.2;
+export const SPOTLIGHT_DISTANCE = 50;
+export const SPOTLIGHT_ANGLE = 1.5;
+export const SPOTLIGHT_PENUMBRA = 0.05;

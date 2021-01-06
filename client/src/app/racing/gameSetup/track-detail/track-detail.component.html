@@ -1,0 +1,46 @@
+<div *ngIf="track">
+
+  <h2> {{ track.name }} Details </h2>
+  <div class = "trackOverview">
+    <app-track-overview [track]="track"></app-track-overview> 
+  </div>
+
+  <mat-accordion class="headers-align">
+      <mat-expansion-panel hideToggle="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Description
+          </mat-panel-title>
+          <mat-panel-description>
+            {{ track.trackInfo.description }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+    
+        
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Played Time
+          </mat-panel-title>
+          <mat-panel-description>
+            {{ track.trackInfo.noTimesPlayed }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+    
+      </mat-expansion-panel>
+    
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Best Times
+          </mat-panel-title>
+          <mat-panel-description>
+            Click to show
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <app-best-time [track]="track"></app-best-time>
+      </mat-expansion-panel>
+    </mat-accordion>
+  
+  <button class="button" routerLink="/course/{{track.name}}">Play</button>
+
+</div>

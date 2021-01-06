@@ -1,0 +1,30 @@
+
+.information{
+	margin: 15px;
+	width: 50%;
+	display: inline-block;
+}
+
+.spanInfo{
+	width: 48%;
+	font-weight: bold;
+}
+
+span{
+	display: inline-block;
+}
+
+p{
+	color: black;
+}
+
+.header{
+	font-weight: bold;
+	font-size: 22px;
+	margin-left: 25%;
+	color: rgb(40, 96, 144);
+}
+
+.infoTitle{
+	color: rgb(40, 96, 144);
+}

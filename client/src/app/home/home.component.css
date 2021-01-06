@@ -1,0 +1,18 @@
+.gameSelector{
+	display: inline-block;
+	text-align: center;
+}
+
+.crosswordLogo{
+	width: 25%;
+	height: auto;
+	float: left;
+	margin-left: 300px;
+}
+
+.voitureLogo{
+	width: 25%;
+	height: auto;
+	float: right;
+	margin-right: 300px;
+}

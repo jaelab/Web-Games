@@ -1,0 +1,40 @@
+<div class = "main" (click) = "otherClick()">
+	<div class = "outer">
+		<app-game-informations></app-game-informations>
+		<div class = "div-cheat"> 
+			<app-cheat-mode></app-cheat-mode>
+		</div>
+	</div>
+		
+	<!-- THE GRID -->
+	<div class = "div-grid">
+		<table class = "table-grid">
+			<tr *ngFor="let gridX of crossword.grid">
+				<td *ngFor="let gridY of gridX">
+					<app-cell [cell] = gridY (oCellClicked) = "cellClicked($event)" (oInput) = "letterEntered($event)"></app-cell>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<!-- THE DEFINITION/WORDS -->
+	<div class = "div-definition">
+		<mat-tab-group>
+			<mat-tab label = "Horizontal Words" id = "horizontal">
+					<div *ngFor="let def of crossword.wordDefinitions ; let i = index">
+						<span *ngIf = "def[0]._isHorizontal" > 
+							<app-definition [wordFound] = "false" [definition] = "def" (definitionClickedEvent) = "indiceClicked($event)"></app-definition>
+						</span>
+					</div>
+			</mat-tab>
+
+			<mat-tab label = "Vertical Words" id = "vertical">
+					<div *ngFor="let def of crossword.wordDefinitions ; let i = index">
+						<span *ngIf = "!def[0]._isHorizontal">
+							<app-definition [wordFound] = "false" [definition] = "def" (definitionClickedEvent) = "indiceClicked($event)"></app-definition>
+						</span>
+					</div>
+			</mat-tab>
+		</mat-tab-group>
+	</div>
+</div>

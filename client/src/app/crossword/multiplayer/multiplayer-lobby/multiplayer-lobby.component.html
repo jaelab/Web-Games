@@ -1,0 +1,55 @@
+<p class = "title">Welcome To The Multiplayer Lobby</p>
+<table>
+  <tr>
+
+    <td>
+      <form> 
+        <span>Enter your name here </span>
+        <input type="text" name="newPlayerName" [(ngModel)]="newPlayerName" placeholder="Name" [value] = "newPlayerName"> 
+        <input id="button" type= "button" value="Create new game" (click)="createNewGame(_difficulty)">
+      </form> 
+    </td>
+
+    <td>
+      <div class = "col-md-6">
+        <p class = "secondaryTitle">Select Difficulty</p>
+        <div class="btn-group btn-group-toggle" ngbRadioGroup name="diff" [(ngModel)]="_difficulty">
+
+          <label ngbButtonLabel class="btn-primary btn-lg">
+            <input ngbButton type="radio" value="easy"> Easy
+          </label>
+
+          <label ngbButtonLabel class="btn-primary btn-lg">
+            <input ngbButton type="radio" value="normal" > Normal
+          </label>
+
+          <label ngbButtonLabel class="btn-primary btn-lg">
+            <input ngbButton type="radio" value="hard" > Hard
+          </label>
+
+        </div>
+      </div>
+    </td>
+
+  </tr>
+</table>
+
+<br>
+<div class = "newGame">
+  <h3> List Of Available Games </h3>
+</div>
+
+<table class="tableHover">
+  <tr>
+    <th>List Of Waiting Players...</th>
+    <th>Difficulty</th>
+    <th>Join Button</th>
+  </tr>
+  <tr *ngFor="let game of _inWaitGames; index as i">
+    <td>{{game.players[0]}}</td>
+    <td>{{game.gameDifficulty}}</td>
+    <td>
+      <button (click)="joinGame(game)"  id= "button">Join Game</button>
+    </td> 
+  </tr>
+</table>

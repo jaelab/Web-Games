@@ -1,0 +1,41 @@
+p {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+h2 {
+  font: 400 40px Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+  }
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mat-expansion-panel {
+  width: 47%;
+}

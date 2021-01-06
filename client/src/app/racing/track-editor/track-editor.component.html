@@ -1,0 +1,18 @@
+<div #form >
+  <form (submit)="saveTrack(addedName, addedDescription)"> 
+      <span>Circuit Name </span>
+      <input type="text" name="addedName" (keyup)="this._editedTrack.updateName(addedName)" [(ngModel)]="addedName" placeholder="Name" [(value)] = "this._editedTrack.name"> 
+      <span>Circuit Description </span>
+      <input type="text" name="addedDescription" (keyup)="this._editedTrack.updateDescription(addedDescription)" [(ngModel)]="addedDescription" placeholder="Description" [(value)] = "this._editedTrack.trackInfo.description"> 
+      <input type = "submit" id= "button" [disabled] = "!_editedTrack.isReadyToSave()" value="submit">
+  </form>
+</div>
+<div #container oncontextmenu="return false" class="track" (mouseup) = "onMouseUp($event)" (mousemove) = "onDrag($event)" (mousedown) = "onSelect($event)">
+  <ul>
+    <li> Nombre de points ajoutés: {{this._editedTrack.points.length}} </li>
+    <li> Cette configuration est valide : {{this._editedTrack.isValid}} </li>
+    <li> Cette piste est un circuit complet : {{this._editedTrack.isCompleteLoop}} </li>
+    <li> La longueur de cette piste est : {{this._editedTrack.trackLength}} </li>
+    <li> Cette piste peut etre sauvegardée : {{this._editedTrack.isReadyToSave()}} </li>
+  </ul>
+</div>

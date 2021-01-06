@@ -1,0 +1,22 @@
+// tslint:disable:no-magic-numbers
+export const STRAIGHT_ANGLE_DEG: number = 180;
+export const DEG_TO_RAD: number = Math.PI / STRAIGHT_ANGLE_DEG;
+export const MIN_TO_SEC: number = 60;
+export const MS_TO_SECONDS: number = 1000;
+export const GRAVITY: number = -9.81;
+export const RAD_TO_DEG: number = STRAIGHT_ANGLE_DEG / Math.PI;
+export const PI_OVER_2: number = Math.PI / 2;
+export const FOV: number = 55;
+export const FAR_PLANE: number = 300;
+export const NEAR_PLANE: number = 1.5;
+export const STARTING_ORTHOGRAPHIC_X: number = 0;
+export const STARTING_ORTHOGRAPHIC_Y: number = 50;
+export const STARTING_ORTHOGRAPHIC_Z: number = 0;
+export const STARTING_PERSPECTIVE_X: number = 0;
+export const STARTING_PERSPECTIVE_Y: number = 4;
+export const STARTING_PERSPECTIVE_Z: number = 12;
+export const LEFT: number = window.innerWidth / -40;
+export const RIGHT: number = window.innerWidth / 40;
+export const TOP: number = window.innerHeight / 40;
+export const BOTTOM: number = window.innerHeight / -40;
+export const ROTATION: number = (Math.PI / 2) * 3;

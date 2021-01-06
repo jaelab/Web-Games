@@ -1,0 +1,3 @@
+
+<p [ngClass] = "{definition: true, wordFoundClass: wordFound}" *ngIf = "!cheatModeService._isCheatMode"> <button type="button" class="btn btn-primary btn-xs" (click) = "definitionClicked($event)" [disabled] = "wordFound" > ({{_definition[0]._x}},{{_definition[0]._y}}) </button> {{_definition[1]}} </p>
+<p [ngClass] = "{definition: true, wordFoundClass: wordFound}" *ngIf = "cheatModeService._isCheatMode"> <button type="button" class="btn btn-primary btn-xs" (click) = "definitionClicked($event)"[disabled] = "wordFound" > ({{_definition[0]._x}},{{_definition[0]._y}}) </button> {{_definition[0]._word}} </p>

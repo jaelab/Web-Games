@@ -1,0 +1,9 @@
+export const PATH: string = "../assets/audio/";
+export const RACE_START: string = "raceStart.ogg";
+export const MASTER: string = "master.ogg";
+export const ENGINE: string = "engine.ogg";
+export const ACCELERATION: string = "acceleration.ogg";
+export const BRAKE: string = "brake.ogg";
+export const TURNING_SOUND: string = "turningSound.ogg";
+export const WALL_HIT: string = "boom1.ogg";
+export const CAR_HIT: string = "boom2.ogg";

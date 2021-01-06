@@ -1,0 +1,44 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+.title{
+    padding-top: 25px;
+	text-align: center;
+	font-size: 54px;
+	font-weight: bold;
+}
+
+.newGame{
+  padding-left: 50px;
+  text-align: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+td, th {
+  border: 1px solid #c1c0c4;
+  text-align: center;
+  padding: 8px;
+  font-size: 18px;
+}
+
+
+.tableHover tr:hover {
+  background-color:rgba(148, 185, 216, 0.418);
+  }
+  #button {
+    background-color: rgb(49, 90, 201);
+    border: none;
+    color: white;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:6px;
+}

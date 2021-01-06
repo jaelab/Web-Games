@@ -1,0 +1,15 @@
+<div class = "trackList">
+  <h1>TRACK SELECT</h1>
+  <ul>
+    <li *ngFor="let track of _trackList" 
+    [class.selected]="track === selectedTrack"
+    (click)="onSelect(track)">
+      <div class = "track">{{track.name}}</div>
+    </li>
+  </ul>
+</div>
+
+<div class = "trackDetail">
+  <app-track-detail [track]="selectedTrack"></app-track-detail>
+</div>
+  

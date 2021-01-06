@@ -1,0 +1,23 @@
+
+mat-tab-group{
+    margin-top: 50px;
+    background-color: lightgray;
+    width: 26%;
+}
+
+.Result {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+  }
+  
+  .mat-table {
+    overflow: auto;
+    max-height: 500px;
+  }
+
+  button {
+    background: white;
+    margin-top: 10px;
+    margin-left: 45px;
+}

@@ -1,0 +1,20 @@
+
+<button type = "submit" id= "button" routerLink = "/admin/trackeditor/NoTrackHereNewTrack">Add Circuit</button>
+<table >
+  <tr>
+    <th>Circuit Name </th>
+    <th>Description </th>
+    <th>Advanced Options</th>
+  </tr>
+</table>
+
+<table class="tableHover" *ngFor="let track of _trackList; index as i">
+  <tr>
+    <td>{{track.name}}</td>
+    <td>{{track.trackInfo.description}}</td>
+    <td>
+      <a type = "button" (click) = "openEditor(track)" id= "button">Edit</a>
+      <button (click)="deleteTrack(track)"  id= "button">Remove</button>
+     </td> 
+  </tr>
+</table>

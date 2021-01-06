@@ -1,0 +1,20 @@
+// tslint:disable:no-magic-numbers
+export const FOV: number = 55;
+export const ZOOM_SPEED: number = 0.05;
+export const MAX_ZOOM_ORTHO: number = 7;
+export const MAX_ZOOM_PERSPEC: number = 66;
+export const MIN_ZOOM_ORTHO: number = 0.11;
+export const MIN_ZOOM_PERSPEC: number = 8.3;
+export const FAR_PLANE: number = 300;
+export const NEAR_PLANE: number = 1.5;
+export const STARTING_ORTHOGRAPHIC_X: number = 0;
+export const STARTING_ORTHOGRAPHIC_Y: number = 50;
+export const STARTING_ORTHOGRAPHIC_Z: number = 0;
+export const STARTING_PERSPECTIVE_X: number = 0;
+export const STARTING_PERSPECTIVE_Y: number = 4;
+export const STARTING_PERSPECTIVE_Z: number = 15;
+export const LEFT: number = window.innerWidth / -40;
+export const RIGHT: number = window.innerWidth / 40;
+export const TOP: number = window.innerHeight / 40;
+export const BOTTOM: number = window.innerHeight / -40;
+export const PI_OVER_2: number = Math.PI / 2;
